@@ -1,5 +1,5 @@
-FROM php:7
-MAINTAINER Will Hall "will@willhallonline"
+FROM php
+MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Update image
 RUN apt-get update -y
@@ -9,9 +9,9 @@ RUN apt-get install -y \
     zip \
     unzip
 
-# Remove memory limit for PHP-CLI
-RUN echo "memory_limit = -1" > /usr/local/etc/php/conf.d/php.ini
-RUN echo "date.timezone = UTC" >> /usr/local/etc/php/conf.d/php.ini
+# Remove memory limit for PHP-CLI and set timezone
+RUN echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory-limit.ini
+RUN echo "date.timezone = UTC" >> /usr/local/etc/php/conf.d/date-timezone.ini
 
 # Install Composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"

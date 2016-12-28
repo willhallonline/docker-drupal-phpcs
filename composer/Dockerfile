@@ -6,6 +6,9 @@ MAINTAINER Will Hall "will@willhallonline.co.uk"
 RUN composer global require squizlabs/php_codesniffer
 RUN composer global require drupal/coder
 
+# Set path to enable composer executables
+ENV PATH "$PATH:/root/.composer/vendor/bin"
+
 # Set Drupal as default CodeSniffer Standard
 RUN phpcs --config-set installed_paths /composer/vendor/drupal/coder/coder_sniffer/
 RUN phpcs --config-set default_standard Drupal
