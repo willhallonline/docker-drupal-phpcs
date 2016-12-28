@@ -1,5 +1,5 @@
 FROM php:7
-MAINTAINER Will Hall "will@willhallonline.co.uk"
+MAINTAINER Will Hall "will@willhallonline"
 
 # Update image
 RUN apt-get update -y
@@ -20,13 +20,19 @@ RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/bin/composer
 RUN chmod +x /usr/bin/composer
 
+# Allow Composer to be run as root and set $PATH for Composer Executables
+ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV PATH "$PATH:/root/.composer/vendor/bin"
 
 # Install PHPCS and Drupal Coding Standards
 RUN composer global require squizlabs/php_codesniffer
 RUN composer global require drupal/coder
 
+# Set Drupal as default CodeSniffer Standard
+RUN phpcs --config-set installed_paths /root/.composer/vendor/drupal/coder/coder_sniffer/
+RUN phpcs --config-set default_standard Drupal
+
 WORKDIR /app
 
-CMD ["phpcs", "--standard=~/.composer/vendor/drupal/coder/coder_sniffer/Drupal", "--extensions=php,inc,install,module,theme"]
-CMD ["phpcbf", "--standard=~/.composer/vendor/drupal/coder/coder_sniffer/Drupal", "--extensions=php,inc,install,module,theme"]
+CMD ["phpcs"]
+CMD ["phpcbf"]
