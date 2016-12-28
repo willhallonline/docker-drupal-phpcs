@@ -7,7 +7,8 @@ RUN apt-get update -y
 # Install Dependencies
 RUN apt-get install -y \
     zip \
-    unzip
+    unzip \
+    patch
 
 # Remove memory limit for PHP-CLI and set timezone
 RUN echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory-limit.ini
