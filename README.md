@@ -1,6 +1,9 @@
 # Supported tags and respective ```Dockerfile``` links
-* ```latest```
-* ```alpine```
+
+![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/drupal-phpcs.svg)
+
+* ```latest``` ![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/drupal-phpcs/latest.svg)
+* ```alpine``` ![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/drupal-phpcs/alpine.svg)
 
 **This is a Dockerised Solution for running PHPCS with Drupal Standards**.
 
