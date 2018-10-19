@@ -1,4 +1,4 @@
-FROM willhallonline/phpcs:php-7.2-alpine
+FROM willhallonline/phpcs:php-7.2
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Install Drupal Coding Standards
