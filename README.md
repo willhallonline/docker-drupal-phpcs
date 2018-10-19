@@ -6,8 +6,8 @@ Drupal Coding Standards inside a container.
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/drupal-phpcs.svg)][hub] [![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/drupal-phpcs/alpine.svg)][microbadger] [![Docker Automated build](https://img.shields.io/docker/automated/willhallonline/drupal-phpcs.svg)][hub] [![Docker Build Status](https://img.shields.io/docker/build/willhallonline/drupal-phpcs.svg)][hub]
 
-* ```alpine```, ```2.9-alpine```, ```latest``` [Dockerfile](https://github.com/willhallonline/docker-drupal-phpcs/blob/master/alpine/Dockerfile)
-* ```stretch```, ```2.9-stretch``` [Dockerfile](https://github.com/willhallonline/docker-drupal-phpcs/blob/master/stretch/Dockerfile)
+* ```alpine```, ```3.0-alpine```, ```latest``` [Dockerfile](https://github.com/willhallonline/docker-drupal-phpcs/blob/master/alpine/Dockerfile)
+* ```stretch```, ```3.0-stretch``` [Dockerfile](https://github.com/willhallonline/docker-drupal-phpcs/blob/master/stretch/Dockerfile)
 
 **This is a Dockerised Solution for running PHPCS with Drupal Standards**.
 
