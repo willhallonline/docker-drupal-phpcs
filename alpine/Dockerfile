@@ -6,7 +6,7 @@ RUN composer global require drupal/coder
 
 # Set Drupal as default CodeSniffer Standard
 RUN phpcs --config-set installed_paths /root/.composer/vendor/drupal/coder/coder_sniffer/ \
-    && phpcs --config-set default_standard Drupal
+    && phpcs --config-set default_standard Drupal,DrupalPractice
 
 WORKDIR /app
 

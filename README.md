@@ -2,12 +2,12 @@
 
 Drupal Coding Standards inside a container.
 
-# Supported tags and respective ```Dockerfile``` links
+### Supported tags and respective ```Dockerfile``` links
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/drupal-phpcs.svg)][hub] [![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/drupal-phpcs/alpine.svg)][microbadger] [![Docker Automated build](https://img.shields.io/docker/automated/willhallonline/drupal-phpcs.svg)][hub] [![Docker Build Status](https://img.shields.io/docker/build/willhallonline/drupal-phpcs.svg)][hub]
 
-* ```alpine```, ```2.9-alpine```, ```latest```
-* ```stretch```, ```2.9-stretch```
+* ```alpine```, ```2.9-alpine```, ```latest``` [Dockerfile](https://github.com/willhallonline/docker-drupal-phpcs/blob/master/alpine/Dockerfile)
+* ```stretch```, ```2.9-stretch``` [Dockerfile](https://github.com/willhallonline/docker-drupal-phpcs/blob/master/stretch/Dockerfile)
 
 **This is a Dockerised Solution for running PHPCS with Drupal Standards**.
 
@@ -17,7 +17,7 @@ PHP_CodeSniffer is a set of two PHP scripts; the main ```phpcs``` script that to
 
 ## What are Drupal Coding Standards?
 
-The [Drupal Coding Standards](https://www.drupal.org/docs/develop/standards) apply to code within Drupal and its contributed modules. This is maintained by the ```drupal/coder``` composer package.
+The [Drupal Coding Standards](https://www.drupal.org/docs/develop/standards) apply to code within Drupal and its contributed modules. This is maintained by the ```drupal/coder``` composer package (https://packagist.org/packages/drupal/coder).
 
 ## Docker Commands
 
@@ -25,23 +25,21 @@ The [Drupal Coding Standards](https://www.drupal.org/docs/develop/standards) app
 
 ```
 docker pull willhallonline/drupal-phpcs
-docker pull willhallonline/drupal-phpcs:alpine
+docker pull willhallonline/drupal-phpcs:stretch
 ```
 
-### Run
-
-#### PHPCS (PHP CodeSniffer)
+### PHPCS (PHP CodeSniffer)
 
 ```
 docker run -it --rm -v $(pwd):/app willhallonline/drupal-phpcs phpcs [YOUR-CODE]
-docker run -it --rm -v $(pwd):/app willhallonline/drupal-phpcs:alpine phpcs [YOUR-CODE]
+docker run -it --rm -v $(pwd):/app willhallonline/drupal-phpcs:stretch phpcs [YOUR-CODE]
 ```
 
-#### PHPCBF (PHP CodeFixer)
+### PHPCBF (PHP CodeFixer)
 
 ```
 docker run -it --rm -v $(pwd):/app willhallonline/drupal-phpcs phpcbf [YOUR-CODE]
-docker run -it --rm -v $(pwd):/app willhallonline/drupal-phpcs:alpine phpcbf [YOUR-CODE]
+docker run -it --rm -v $(pwd):/app willhallonline/drupal-phpcs:stretch phpcbf [YOUR-CODE]
 ```
 
 ## Maintainer
