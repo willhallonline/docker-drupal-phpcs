@@ -1,4 +1,4 @@
-FROM willhallonline/phpcs:2.9-stretch
+FROM willhallonline/phpcs:php-7.2-stretch
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Install Drupal Coding Standards
