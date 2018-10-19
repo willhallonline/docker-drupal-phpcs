@@ -49,4 +49,4 @@ docker run -it --rm -v $(pwd):/app willhallonline/drupal-phpcs:alpine phpcbf [YO
 * Will Hall (https://www.willhallonline.co.uk)
 
 [hub]: https://hub.docker.com/r/willhallonline/drupal-phpcs/
-[microbadger]: 
+[microbadger]: https://microbadger.com/images/willhallonline/drupal-phpcs
