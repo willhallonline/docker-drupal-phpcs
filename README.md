@@ -1,9 +1,13 @@
+# Drupal PHPCS
+
+Drupal Coding Standards inside a container.
+
 # Supported tags and respective ```Dockerfile``` links
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/drupal-phpcs.svg)][hub]
+[![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/drupal-phpcs.svg)][hub] [![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/drupal-phpcs/alpine.svg)][microbadger] [![Docker Automated build](https://img.shields.io/docker/automated/willhallonline/drupal-phpcs.svg)][hub] [![Docker Build Status](https://img.shields.io/docker/build/willhallonline/drupal-phpcs.svg)][hub]
 
-* ```latest``` ![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/drupal-phpcs/latest.svg)
-* ```alpine``` ![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/drupal-phpcs/alpine.svg)
+* ```alpine```, ```2.9-alpine```, ```latest```
+* ```stretch```, ```2.9-stretch```
 
 **This is a Dockerised Solution for running PHPCS with Drupal Standards**.
 
@@ -40,4 +44,9 @@ docker run -it --rm -v $(pwd):/app willhallonline/drupal-phpcs phpcbf [YOUR-CODE
 docker run -it --rm -v $(pwd):/app willhallonline/drupal-phpcs:alpine phpcbf [YOUR-CODE]
 ```
 
+## Maintainer
+
+* Will Hall (https://www.willhallonline.co.uk)
+
 [hub]: https://hub.docker.com/r/willhallonline/drupal-phpcs/
+[microbadger]: 
