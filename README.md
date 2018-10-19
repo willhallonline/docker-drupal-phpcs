@@ -1,6 +1,6 @@
 # Supported tags and respective ```Dockerfile``` links
 
-![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/drupal-phpcs.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/drupal-phpcs.svg)][hub]
 
 * ```latest``` ![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/drupal-phpcs/latest.svg)
 * ```alpine``` ![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/drupal-phpcs/alpine.svg)
