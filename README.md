@@ -1,6 +1,6 @@
 # Drupal PHPCS
 
-Drupal Coding Standards inside a container.
+Drupal PHP Code Sniffer Coding Standards inside a container.
 
 ### Supported tags and respective ```Dockerfile``` links
 
